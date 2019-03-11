@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/*uwes*/
+.aboutheader {
+    background-color: white;
+}
+
+/*uwes*/
+#logo{
+    padding-left: 106px;
+    margin: 5px;
+}
+
+/*uwes*/
+.nav {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    list-style: none;
+    color: #19345E;
+}
+
+/*uwes*/
+#navbarku {
+    padding-right: 106px;
+    padding-top: 25px;
+}
+
+/*uwes*/
+.headerlist {
+    padding-right: 5px;
+}
+
+
+/*uwes*/
+#active {
+    color: #F47522;
+}
+
+/*uwes*/
+section {
+    color: white;
+    text-align: center;
+}
+
+/*uwes*/
+#section_profile {
+    background-image: url(./images/img-header.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 515px;
+}
+
+/*uwes*/
+#profile-image {
+    border-radius: 50%;
+    height: 174px; 
+    width: 174px;
+    margin-top: 60px;
+}
+
+/*uwes*/
+#myname {
+    font-family: "Muli", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 13px;
+}
+
+/*uwes*/
+#mylocation {
+    font-family: "Muli", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+/*uwes*/
+#ico-location {
+    height: 21px;
+    margin-right: 2px;
+}
+
+/*uwes*/
+#mydescription {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Muli", sans-serif;
+    margin-bottom: 30px;    
+}
+
+/*uwes*/
+#cv-button {
+    margin-top: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Muli", sans-serif;
+    background-color: #F47522;
+    padding: 16px 43px 16px 43px;
+    border-radius: 10px;
+    color: white;
+}
+
+/*uwes*/
+.myprofile {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    border: 1px lightgrey solid;
+    margin-top: 60px;
+    margin-bottom: 140px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px #DEDEDE
+}
+
+/*uwes*/
+#aboutme {
+    
+    text-align: left;
+    padding: 32px 120px 75px 80px;
+    width:  50%;
+}
+
+/*uwes*/
+#information {
+    
+    text-align: left;
+    padding: 32px 100px 75px 80px;
+    width:  50%;
+}
+
+/*uwes*/
+h4 {
+    color:#19345E;
+    font-size: 25px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+/*uwes*/
+#phar1, #phar2, #phar3 {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/*uwes*/
+#alterra {
+    color: #F47522;
+}
+
+/*uwes*/
+.tabelinformasi {
+    border: 1px #CBCBCB solid;
+    color: black;
+}
+
+/*uwes*/
+.tabelinformasi tr {
+    border: 1px #CBCBCB solid;
+}
+
+/*uwes*/
+.tabelinformasi th {
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    border: 1px #CBCBCB solid;
+    font-weight: 700;
+    height: 40px;
+    width: 90px;
+    padding-left: 15px;
+}
+
+/*uwes*/
+.tabelinformasi td {
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    border: 1px #CBCBCB solid;
+    font-weight: 400;
+    height: 40px;
+    width: 298px;
+    padding-left: 15px;
+}
+
+/*uwes*/
+#tabelrow2 {
+    background-color: #E3E3E3;
+}
+
+
+
+.picturegalery {
+  width: 45.47px;
+  height: 41.27px;
+  opacity: 100%;
+}
+
+h1 {
+  width: 91px;
+  height: 30px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 700;
+  color: #19345E;
+  opacity: 100%;
+  align-content: left;
+}
+
+hr {
+  background-color:#19345E;
+  margin: 25px 0px 25px 0px;
+  width: 100%;
+  height: 1px;
+}
+
+.picture1 {
+  width: 305px 100hh;
+  height: 305px;
+  color: #8B8B8B;
+  opacity: 100%;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px;
+}
+
+.picture2 {
+  width: 305px 100hh;
+  height: 305px;
+  color: #8B8B8B;
+  opacity: 100%;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px;
+}
+
+.picture3 {
+  width: 305px 100hh;
+  height: 305px;
+  color: #8B8B8B;
+  opacity: 100%;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px;
+}
+
+.picture4 {
+  width: 305px 100hh;
+  height: 305px;
+  color: #8B8B8B;
+  opacity: 100%;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px;
+}
+
+.picture5 {
+  width: 305px 100hh;
+  height: 305px;
+  color: #8B8B8B;
+  opacity: 100%;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px;
+}
+
+.picture6 {
+  width: 305px 100hh;
+  height: 305px;
+  color: #8B8B8B;
+  opacity: 100%;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px;
+}
+
+
+.leftcolumn {
+    background-image: url(./images/side-view.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+.leftcolumn::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(25, 52, 94, 0.8);
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+@media(max-width: 575px) {
+    .leftcolumn {
+        display: none;
+    }
+}
+.logoimage{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    z-index: 2;
+}
+
+h1 {
+    color: #19345E;
+    font-family: 'Muli', sans-serif;
+    font-size: 28px;
+}
+
+p {
+    color: #535353;
+    font-family: 'Muli,light', sans-serif;
+    font-size: 12px;
+}
+
+form {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn.btn-warning.btn-lg.btn-block {
+    color: white;
+    background-color: rgb(255, 136, 0);
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 53;
+}
+
+.btn.btn-warning.btn-lg.btn-block:hover {
+    background-color: red !important;
+    transition: 2s;
+}
+
+
+.editphone {
+    height: 20px;
+}
+
+.formisi{
+    margin: 10px 100px 80px 100px;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border-right-style: none;
+}
+
+.form-control {
+    background-color: transparent;
+    border-left-style: none;
+}
+
+#national, #message{
+    border-left-style: solid;
+}
+
+select.input-lg {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    /* no standardized syntax available, no ie-friendly solution available */
+}
+
+.select-arrow {
+    position: relative;
+}
+.select-arrow:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    background-image: url(./images/down-arrow.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 11px;
+    background-size: 15px;
+    padding: 0px 25px 0px 0px;
+}
+
+/*uwes*/
+.footer {
+    background-color: #19345E;
+    border: 1px solid #707070;
+    height: 207px;
+}
+
+/*uwes*/
+#logofooter {
+    padding: 44px 0 0 106px;
+}
+
+/*uwes*/
+#copyright {
+    padding: 20px 0 0 106px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+/*uwes*/
+.followme {
+    float: right;
+    padding: 44px 40px 0 0;
+}
+
+/*uwes*/
+.textfollowme {
+    color: white;
+    font-size: 17px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+/*uwes*/
+.textsosmed{
+    padding: 1px 0 0 4px;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: left;
+}
+/*uwes*/
+#facebook {
+    margin-left: 6px;
+}
+/*uwes*/
+.listsosmed{
+    list-style: none;
+    margin-right: 100px;
+    text-align: left;
+}
+/*uwes*/
+.imgsosmed {
+    margin-right: 10px;
+}
+/*uwes*/
+.followme ul {
+    padding-left: 0;
+}
