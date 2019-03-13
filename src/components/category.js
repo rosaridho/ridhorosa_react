@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import propTypes from 'prop-types';
 
 import '../styles/App.css';
 
@@ -12,13 +11,28 @@ class Category extends Component {
                 <div className="row">
                     <div className="col-md-2 col-sm-12 offset-md-0">
                         <div id="classSearch">
-                            <form className="navbar-form navbar-center">
-                                    <div className="input-group-btn">
-                                        <button className="btn btn-success" type="submit" onClick={this.props.doClick1}>
+                            {/* <form className="navbar-form navbar-center"> #form nya hilangin aja, karna ada form jadi ke redirect */}
+                                    <div className="input-group-btn" style={{paddingLeft:"30px"}}>
+                                        <button style={{marginRight:"10px"}} className="btn btn-success" type="submit" onClick={this.props.doClick1}>
                                             <>Sport</>
                                         </button>
+                                        <button style={{marginRight:"10px"}} className="btn btn-success" type="submit" onClick={this.props.doClick2}>
+                                            <>Business</>
+                                        </button>
+                                        <button style={{marginRight:"10px"}} className="btn btn-success" type="submit" onClick={this.props.doClick3}>
+                                            <>Technology</>
+                                        </button>
+                                        <button style={{marginRight:"10px"}} className="btn btn-success" type="submit" onClick={this.props.doClick4}>
+                                            <>Entertainment</>
+                                        </button>
+                                        <button style={{marginRight:"10px"}} className="btn btn-success" type="submit" onClick={this.props.doClick5}>
+                                            <>Science</>
+                                        </button>
+                                        <button style={{marginRight:"10px"}} className="btn btn-success" type="submit" onClick={this.props.doClick6}>
+                                            <>General</>
+                                        </button>
                                     </div>
-                            </form>
+                            {/* </form> */}
                         </div>
                     </div>
                 </div>
@@ -29,11 +43,6 @@ class Category extends Component {
     );
   }
 }
-
-Category.propTypes = {
-    title: propTypes.string.isRequired,
-    placeholder: propTypes.string.isRequired
-};
 
 
 

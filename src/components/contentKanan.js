@@ -2,51 +2,55 @@ import React, { Component } from 'react';
 
 import '../styles/App.css';
 import News from './contentKananProps.js'
-import axios from 'axios';
+
+import { connect } from 'unistore/react';
+import { actions } from "../store.js";
+import { withRouter} from 'react-router-dom';
 
 
-const baseUrl = "https://newsapi.org/v2";
-const searchCategory = "/top-headlines";
-const searchSource  = "bbc-news";
-const keyAPI = "31a74b58e4bb4e1bb1d7bb0542dd1d81";
-const myReqUrl = baseUrl + searchCategory + "?sources="+ searchSource + "&apiKey=" + keyAPI
+// const baseUrl = "https://newsapi.org/v2";
+// const searchCategory = "/top-headlines";
+// const searchSource  = "bbc-news";
+// const keyAPI = "31a74b58e4bb4e1bb1d7bb0542dd1d81";
+// const myReqUrl = baseUrl + searchCategory + "?sources="+ searchSource + "&apiKey=" + keyAPI
 
 
 class ContentKanan extends Component {
-  constructor(props){
-    super(props);
-    this.state={
-      listNews : []
-    }
-  }
+  // constructor(props){
+  //   super(props);
+  //   this.state={
+  //     listNews : []
+  //   }
+  // }
   
   componentDidMount = () => {
-    const self = this;
+    this.props.showHeadLine()
+    // const self = this;
 
-    axios
-    .get(myReqUrl)
-    .then(function(response){
+    // axios
+    // .get(myReqUrl)
+    // .then(function(response){
       
-      self.setState({listNews: response.data.articles})
-      console.log(response.data)
-    })
-    .catch(function(error){
-      console.log(error)
-    })
+    //   self.setState({listNews: response.data.articles})
+    //   console.log(response.data)
+    // })
+    // .catch(function(error){
+    //   console.log(error)
+    // })
   }
 
   render() {
-    const {listNews} = this.state;
+    // const {listNews} = this.state;
     return (
         <div className="album background" id="level-0">
           <div className="headerCart">
                   <div className="col-md-4 col-sm-12 offset-md-1">
                     <div className="flex-container">
                         <div id="kotak3head">
-                            <h3 style={{float:"left", marginRight: "200px"}}>Berita Terkini</h3>
-                            <h3 style={{color:"#699eee"}}>Lihat Semua</h3>
+                            <h3 style={{float:"left", marginRight: "150px"}}>Berita Terkini</h3>
+                            <a href="https://newsapi.org/v2/everything?q=/everything&apiKey=31a74b58e4bb4e1bb1d7bb0542dd1d81" style={{color:"#699eee"}}>Lihat Semua</a>
                         </div>            
-                            {listNews.map((item, key) => {
+                            {this.props.listNews.map((item, key) => {
                               return <News key={key} title={item.title} url={item.url} />
                             })}
                     </div>
@@ -57,4 +61,9 @@ class ContentKanan extends Component {
   }
 }
 
-export default ContentKanan;
+export default connect(
+  "listNews",
+  actions
+)(withRouter(ContentKanan));
+
+// export default ContentKanan;

@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-// import App from './App';
+import { Provider } from "unistore/react";
+import {store} from "./store";
 import AppRouter from './AppRouter.js'
 import * as serviceWorker from './serviceWorker';
-// import AppRouter from './AppRouter';
 import { BrowserRouter } from 'react-router-dom';
-
-// ReactDOM.render(<App />, document.getElementById('root'));
-
 
 const rootEl = document.getElementById('root');
 const render = Component =>
     ReactDOM.render(
+        <Provider store={store}>
         <BrowserRouter>
         <Component/>
-        </BrowserRouter>,
+        </BrowserRouter>
+        </Provider>,
         rootEl
     );
 

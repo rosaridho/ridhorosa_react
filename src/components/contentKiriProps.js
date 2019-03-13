@@ -26,11 +26,11 @@ const News = props => {
   )
 }
 
-News.propTypes = {
-  title : propTypes.string.isRequired, 
-  content : propTypes.string.isRequired,
-  img : propTypes.string,
-} 
+// News.propTypes = {
+//   title : propTypes.string.isRequired, 
+//   content : propTypes.string,
+//   img : propTypes.string,
+// } 
 
 
 export default News;
