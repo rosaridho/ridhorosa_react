@@ -10,7 +10,7 @@ class AppAjax extends Component {
     postSignout = () => {
         localStorage.removeItem('is_login');
         // localStorage.clear();
-        this.props.history.push('/profile');
+        this.props.history.push('/');
     };
     render(){
         return (
